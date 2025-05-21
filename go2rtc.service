@@ -1,0 +1,12 @@
+[Unit]
+Description=go2rtc RTSP server
+After=network.target
+
+[Service]
+ExecStart=/usr/local/bin/go2rtc
+Restart=always
+User=pi
+WorkingDirectory=/home/pi/go2rtc
+
+[Install]
+WantedBy=multi-user.target
