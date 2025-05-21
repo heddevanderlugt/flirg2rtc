@@ -1,0 +1,5 @@
+streams:
+  flir: ffmpeg:/dev/video0#video=h264#preset=ultrafast#tune=zerolatency#framerate=10
+
+rtsp:
+  listen: ":8554"
