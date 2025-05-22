@@ -24,4 +24,4 @@ https://github.com/AlexxIT/go2rtc/releases/download/v1.9.9/go2rtc_linux_arm64
 
 ## Usage
 2. Open VLC or other RTSP capable viewer
-    Open stream rtsp://<your host here>:8554/flir
+    Open stream rtsp://yourpihostname:8554/flir
