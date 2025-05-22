@@ -10,17 +10,12 @@ sudo apt update
 echo "Install ffmpeg"
 sudo apt install ffmpeg
 
-mkdir go2rtc
-cd go2rtc
-
 ARCH=$(uname -m)
 
 if [[ "$ARCH" == armv7l || "$ARCH" == armv6l ]]; then
-    wget https://github.com/AlexxIT/go2rtc/releases/download/v1.9.9/go2rtc_linux_arm
-    mv go2rtc_linux_arm go2rtc
+    mv -f go2rtc_linux_arm go2rtc
 elif [[ "$ARCH" == aarch64 ]]; then
-    wget https://github.com/AlexxIT/go2rtc/releases/download/v1.9.9/go2rtc_linux_arm64
-    mv go2rtc_linux_arm64 go2rtc
+    mv -f go2rtc_linux_arm64 go2rtc
 else
     echo "Unsupported architecture: $ARCH"; exit 1
 fi
