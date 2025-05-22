@@ -10,7 +10,7 @@ https://github.com/AlexxIT/go2rtc/releases/download/v1.9.9/go2rtc_linux_arm64
 ## Installation
 1. Clone the repository:
     ```bash
-    git clone https://github.com/heddevanderlugt/flirg2rtc/archive/refs/heads/main.zip
+    git clone https://github.com/heddevanderlugt/flirgo2rtc/archive/refs/heads/main.zip
     ```
 
 2. Navigate to the project directory:
