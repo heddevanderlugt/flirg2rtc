@@ -16,7 +16,7 @@ cd go2rtc
 ARCH=$(uname -m)
 
 if [[ "$ARCH" == armv7l || "$ARCH" == armv6l ]]; then
-    wget https://github.com/AlexxIT/go2rtc/releases/download/v1.9.9/go2rtc_linux_arm64
+    wget https://github.com/AlexxIT/go2rtc/releases/download/v1.9.9/go2rtc_linux_arm
     mv go2rtc_linux_arm go2rtc
 elif [[ "$ARCH" == aarch64 ]]; then
     wget https://github.com/AlexxIT/go2rtc/releases/download/v1.9.9/go2rtc_linux_arm64
