@@ -1,27 +1,37 @@
 # FLIRGO2RTC
-## Summary
-Creates a RTSP stream from a FLIR boson usb camera on Raspberry PI
-Uses ffmpeg, go2rtc
 
-For ease of installation a copy of go2rtc is include in this repository.
-These are obtained from:
-https://github.com/AlexxIT/go2rtc/releases/download/v1.9.9/go2rtc_linux_arm64 
+## Summary
+
+This project creates an RTSP stream from a FLIR Boson USB camera on a Raspberry Pi using FFmpeg and go2rtc.
+
+For ease of installation, a precompiled version of `go2rtc` is included in this repository.
+Source: [go2rtc v1.9.9 for ARM64](https://github.com/AlexxIT/go2rtc/releases/download/v1.9.9/go2rtc_linux_arm64)
 
 ## Installation
+
 1. Clone the repository:
-    ```bash
-    git clone https://github.com/heddevanderlugt/flirgo2rtc.git
-    ```
+
+   ```bash
+   git clone https://github.com/heddevanderlugt/flirgo2rtc.git
+   ```
 
 2. Navigate to the project directory:
-    ```bash
-    cd flirgo2rtc
-    ```
-3. Install as service:
-    ```bash
-    source install.sh
-    ```
+
+   ```bash
+   cd flirgo2rtc
+   ```
+
+3. Install the service:
+
+   ```bash
+   source install.sh
+   ```
 
 ## Usage
-2. Open VLC or other RTSP capable viewer
-    Open stream rtsp://yourpihostname:8554/flir
+
+Open VLC or any other RTSP-compatible viewer and connect to the stream:
+
+```
+rtsp://your-pi-hostname:8554/flir
+```
+
